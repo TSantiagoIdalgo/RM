@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/*------------------INPUTS-----------------------------------*/
+
+
+#name:not(:placeholder-shown){
+    @apply border-2 border-common
+}
+#name:not(:placeholder-shown) + .absolute{
+    @apply transform -translate-y-5 scale-90
+}
+
+#email:not(:placeholder-shown){
+    @apply border-2 border-common
+}
+#email:not(:placeholder-shown) + .absolute{
+    @apply transform -translate-y-5 scale-90
+}
+
+#password:not(:placeholder-shown){
+    @apply border-2 border-common
+}
+#password:not(:placeholder-shown) + .absolute{
+    @apply transform -translate-y-5 scale-90
+}
+/*----------------------------------------------------------*/
+
+@import 'tailwindcss/utilities';
